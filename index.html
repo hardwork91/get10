@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get10</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="sirve.css" />
+  </head>
+  <body>
+    <div class="game">
+      <div id="digit-selector">
+        <label for="digits">Seleccione la cantidad de digitos:</label>
+        <select id="digitos">
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div id="game-container">
+        <div class="number">
+          <span id="number"></span>
+          <span id="solution"></span>
+          <span id="answer"></span>
+        </div>
+        <div id="operations"></div>
+        <div id="clear" class="glass-button" onclick="clearAnswer()">Clear</div>
+      </div>
+      <div class="menu-container">
+        <div id="start" class="glass-button" onclick="start()">Start</div>
+        <div id="restart" class="glass-button" onclick="restart()">Restart</div>
+      </div>
+    </div>
+    <script src="sirve.js"></script>
+  </body>
+</html>

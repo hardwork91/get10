@@ -1,0 +1,117 @@
+body {
+  background: linear-gradient(73deg, #10b28f, #d95fe6, #5fb5e6, #e86060);
+  background-size: 1000% 1000%;
+  animation: gradientAnimation 59s ease infinite;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  color: white;
+  text-shadow: 0px 2px 6px black;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 78%;
+  }
+
+  50% {
+    background-position: 100% 23%;
+  }
+
+  100% {
+    background-position: 0% 78%;
+  }
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  font-size: xx-large;
+  flex-direction: column;
+}
+
+#number {
+  font-size: 2em;
+}
+
+#answer {
+  min-height: 40px;
+  min-width: 100%;
+  background: #ffffff59;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 5px 13px 0px #00000059;
+}
+
+.game {
+  min-width: 250px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 100px;
+
+  border-radius: 50px;
+  /* background: #d9d9d9;
+  box-shadow: inset 20px 20px 60px #b8b8b8, inset -20px -20px 60px #fafafa; */
+
+  background: linear-gradient(50deg,
+      rgba(255, 255, 255, 0.4) 12%,
+      rgba(255, 255, 255, 0.1) 77%);
+  /* background-blend-mode: ; */
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.menu-container {
+  margin-top: 20px;
+}
+
+.glass-button {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: linear-gradient(229deg,
+      rgb(255 255 255 / 74%) 12%,
+      rgba(255, 255, 255, 0.1) 77%);
+  box-shadow: 0px 4px 24px 1px rgb(0 0 0 / 26%);
+}
+
+#restart {
+  display: none;
+}
+
+#clear {
+  margin-top: 20px;
+}
+
+#game-container {
+  display: none;
+  flex-direction: column;
+}
+
+#operations {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.operator {
+  display: flex;
+  height: 50px;
+  min-width: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: xx-large;
+  background: #ffffff59;
+  cursor: pointer;
+  font-weight: bold;
+}
